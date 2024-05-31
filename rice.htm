@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五斗米</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- owl.carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
+        body {
+            font-family: 'Roboto Slab', serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .owl-theme .item {
+            width: 70%;
+            margin: auto;
+        }
+
+        div.owl-nav {/*調整左右按鈕高度*/
+            width: 100%;
+            position: absolute; top: 35%;
+            transform: translate(50% 50%);
+        }
+
+        .owl-nav span {/*左右按鈕樣式設定*/
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            line-height: 2.5rem;
+            display: block;
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 1.25rem;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .owl-nav span:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .owl-prev,.owl-next {
+            position: absolute; 
+        }
+        div.owl-nav .owl-prev{/*控制左按鈕*/
+            left: 50px;
+        }
+        div.owl-nav .owl-next{/*控制右按鈕*/
+            right: 50px;
+        }
+
+
+</style>
+<body>
+    <div class="wrap">
+        <header>
+            <h1>  <a href="index.htm" title="五斗米">五斗米</a></h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.htm" title="五斗米">首頁</a></li>
+                    <li><a href="About.htm" title="About Us">關於我們</a></li>
+                    <li><a href="rice.htm" title="">五斗米</a></li>
+                    <li><a href="shop.htm" title="Shop">周邊商品</a></li>
+                    <!-- <li><a href="#" title="Contact Us">更多五斗米</a></li> -->
+                </ul>
+                <button class="nav-button"><img src="image/img_menu.svg" alt=""></button>
+            </nav>
+        </header>
+    </div>
+    
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="img/rice/1.png" alt=""></div>
+        <div class="item"><img src="img/rice/2-1.png" alt=""></div>
+        <div class="item"><img src="img/rice/3.png" alt=""></div>
+        <div class="item"><img src="img/rice/4-3.png" alt=""></div>
+        <div class="item"><img src="img/rice/5.png" alt=""></div>
+      </div>
+
+<script>
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        margin: 30, // 外距 10px
+        nav:true, //設定左右控制按鈕 true, false
+        dots:false, //設定左右控制按鈕 true, false
+        center: true,//設定圖片置中
+      });
+
+</script>
+</body>
+</html>
